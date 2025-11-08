@@ -68,41 +68,6 @@ Accesso:
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:8000/api
 
-## Avvio Manuale
-
-### Backend Laravel
-
-```bash
-cd backend
-composer install
-cp .env.example .env
-php artisan key:generate
-```
-
-Crea `database/database.sqlite` e configura `.env`:
-```
-DB_CONNECTION=sqlite
-DB_DATABASE=/percorso/assoluto/database/database.sqlite
-```
-
-```bash
-php artisan migrate
-php artisan serve
-```
-
-Backend disponibile su http://localhost:8000
-
-### Frontend React
-
-```bash
-cd frontend
-npm install
-echo "VITE_API_URL=http://localhost:8000/api" > .env
-npm run dev
-```
-
-Frontend disponibile su http://localhost:5173
-
 ## API Endpoints
 
 | Metodo | Endpoint | Descrizione |
