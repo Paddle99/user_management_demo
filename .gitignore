@@ -1,0 +1,93 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+public/build/
+public/hot/
+public/storage
+
+# Environment files
+.env
+.env.*
+!.env.example
+.env.local
+.env.production
+.env.docker
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+backend/database/*.sqlite
+backend/database/*.sqlite3
+backend/database/database.sqlite
+
+# Logs
+*.log
+logs/
+backend/storage/logs/*
+backend/storage/*.key
+backend/storage/pail
+
+# Cache
+.cache/
+.parcel-cache/
+.phpunit.cache/
+.phpunit.result.cache
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
+backend/storage/framework/cache/*
+!backend/storage/framework/cache/.gitignore
+backend/storage/framework/sessions/*
+!backend/storage/framework/sessions/.gitignore
+backend/storage/framework/views/*
+!backend/storage/framework/views/.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.fleet/
+.nova/
+.zed/
+.phpactor.json
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Docker
+.dockerignore.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Testing
+coverage/
+.nyc_output/
+.phpunit.cache
+
+# Laravel specific
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Frontend specific
+*.local
+
