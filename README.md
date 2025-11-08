@@ -153,4 +153,19 @@ curl -X POST http://localhost:8000/api/users \
 - Il database SQLite viene creato automaticamente all'avvio
 - Le migrazioni vengono eseguite automaticamente
 - I dati persistono in `backend/database/`
-- Per produzione considerare MySQL/PostgreSQL
+
+## Note sulla Produzione
+
+La configurazione attuale è pensata solo per sviluppo o demo locale.
+
+Per un ambiente di produzione reale, sarebbe necessario adottare alcune accortezze:
+
+- Usare Nginx o Apache per servire le richieste HTTP/HTTPS
+- Configurare SSL/TLS per sicurezza
+- PHP-FPM
+- Non usare php artisan serve
+- Laravel va eseguito tramite PHP-FPM, collegato a Nginx/Apache
+- Database scalabile
+- Sostituire SQLite con MySQL, PostgreSQL o altro database server
+- Gestione variabili d’ambiente
+- Passare le variabili tramite Docker secrets o environment sicure
